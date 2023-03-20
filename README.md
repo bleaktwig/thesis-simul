@@ -10,14 +10,32 @@ you read me!
 6. Run `hipo-utils -merge` on all filtered files to get one gargantuan file containing all output.
 7. Use your gargantuan simulation file for happy analysis!
 
-**Things that should be constants but I'm too lazy to make a constants.sh file:**
-* `VOL="/volatile/clas12/benkel/simul"`
-* `DAT="$VOL/lund/dat"`
-* `BATCHES="$VOL/lund/batches"`
-* `EVIO="$VOL/gemc_out/evio"`
-* `HIPO_IN="$VOL/gemc_out/hipo"`
-* `HIPO_OUT="$VOL/hipo_out/files"`
-* `HIPO_FILTERED="$VOL/hipo_out/filtered"`
-* `WORK="/work/clas12/users/benkel/simul"`
-* `GCARD="$WORK/gcard/rgf_summer2020.gcard"`
-* `BANKLIST="REC::Particle,REC::Track,REC::Calorimeter,REC::Cherenkov,REC::Scintillator,FMT::Tracks"`
+## Constants
+**Locations.**
+```
+WORK          = "/work/clas12/users/benkel/simul"
+VOL           = "/volatile/clas12/benkel/simul"
+DAT           = "$VOL/lund/dat"
+BATCHES       = "$VOL/lund/batches"
+EVIO          = "$VOL/gemc_out/evio"
+HIPO_IN       = "$VOL/gemc_out/hipo"
+HIPO_OUT      = "$VOL/hipo_out/files"
+HIPO_FILTERED = "$VOL/hipo_out/filtered"
+```
+
+**Files.**
+```
+GCARD = "$WORK/gcard/rgf_summer2020.gcard"
+YAML  = "$WORK/yaml/rgf_mc.yaml"
+```
+
+**Bank list.**
+```
+BANKLIST =
+    REC::Particle
+    REC::Track
+    REC::Calorimeter
+    REC::Cherenkov
+    REC::Scintillator
+    FMT::Tracks
+```
