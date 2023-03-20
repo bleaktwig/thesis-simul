@@ -1,4 +1,5 @@
 #!/bin/bash
+# Create a set of batches for easier processing. Each batch contains 5 lund files.
 VOL="/volatile/clas12/benkel/simul"
 DAT="$VOL/lund/dat"
 BATCHES="$VOL/lund/batches"
