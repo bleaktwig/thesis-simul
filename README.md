@@ -10,6 +10,8 @@ you read me!
 6. Run `hipo-utils -merge` on all filtered files to get one gargantuan file containing all output.
 7. Use your gargantuan simulation file for happy analysis!
 
+At any point between steps, you can check the status of your jobs at [scicomp](https://scicomp.jlab.org/scicomp/index.html).
+
 ## Constants
 **Locations.**
 ```
