@@ -1,6 +1,12 @@
 #!/bin/bash
+# Run reconstruction on all files converted by evio2hipo_all.
+VOL="/volatile/clas12/benkel/simul"
+WORK="/work/clas12/users/benkel/simul"
+HIPO_IN="$VOL/gemc_out/hipo"
+HIPO_OUT="$VOL/hipo_out/files"
+
 counter=0
-for file in gemc_out/hipo/*; do
-    sbatch --mem=4096 run_recon.sh "$PWD/$file" "$PWD/hipo_out/files/torus-0.5_solenoid-0.745_999106_$counter.hipo"
+for file in $HIPO_IN/*; do
+    sbatch --mem=2048 $WORK/run_recon.sh "$file" "$HIPO_OUT/simul_999106_$counter.hipo"
     ((counter++))
 done;
