@@ -6,6 +6,6 @@ EVIO="$VOL/gemc_out/evio"
 
 counter=0
 for file in $BATCHES/*; do
-    sbatch --mem=2048 run_gemc.sh "$VOL/$file" "$EVIO/simul_999106_$counter.evio"
+    sbatch --mem=2048 run_gemc.sh "$file" "$EVIO/simul_999106_$counter.evio"
     ((counter++))
 done;
