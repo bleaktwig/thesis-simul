@@ -1,6 +1,7 @@
 #!/bin/bash
 # Run hipo-utils -filter on all the output of sbatch_recon.
 VOL="/volatile/clas12/benkel/simul"
+WORK="/work/clas12/users/benkel/simul"
 HIPO_OUT="$VOL/hipo_out/files"
 HIPO_FILTERED="$VOL/hipo_out/filtered"
 
