@@ -1,6 +1,6 @@
 #!/bin/bash
 # Contain constants: locations, files,
-#     and hipo bank list.
+#     opts, and hipo bank list.
 
 # --+ LOCATIONS +----------------------
 WORK="/work/clas12/users/benkel/simul"
@@ -16,6 +16,10 @@ HIPO_FILTERED="$VOL/hipo_out/filtered"
 # --+ FILES +--------------------------
 GCARD="$WORK/gcard/rgf_summer2020.gcard"
 YAML="$WORK/yaml/rgf_mc.yaml"
+
+# --+ GEMC CONFIG +--------------------
+LUND_VZ="-5.0*cm, 25.0*cm, reset"
+GEMC_OPTS="-USE_GUI=0 -FASTMCMODE -RANDOMIZE_LUND_VZ=$LUND_VZ"
 
 # --+ HIPO BANKS +---------------------
 BANKLIST=""
