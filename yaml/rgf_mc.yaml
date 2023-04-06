@@ -22,14 +22,14 @@ services:
     name: FTOFHB
   - class: org.jlab.service.ec.ECEngine
     name: EC
-  # - class: org.jlab.rec.cvt.services.CVTReconstruction
-  #   name: CVT
-  # - class: org.jlab.service.ctof.CTOFEngine
-  #   name: CTOF
-  # - class: org.jlab.service.cnd.CNDCalibrationEngine
-  #   name: CND
-  # - class: org.jlab.service.band.BANDEngine
-  #   name: BAND
+  - class: org.jlab.rec.cvt.services.CVTReconstruction
+    name: CVT
+  - class: org.jlab.service.ctof.CTOFEngine
+    name: CTOF
+  - class: org.jlab.service.cnd.CNDCalibrationEngine
+    name: CND
+  - class: org.jlab.service.band.BANDEngine
+    name: BAND
   - class: org.jlab.service.htcc.HTCCReconstructionService
     name: HTCC
   - class: org.jlab.service.ltcc.LTCCEngine
@@ -38,16 +38,14 @@ services:
     name: EBHB
   - class: org.jlab.service.dc.DCTBEngine
     name: DCTB
-  - class: org.jlab.service.fmt.FMTEngine
-    name: FMT
   - class: org.jlab.service.ftof.FTOFTBEngine
     name: FTOFTB
   - class: org.jlab.service.eb.EBTBEngine
     name: EBTB
   - class: org.jlab.rec.rich.RICHEBEngine
     name: RICH
-  # - class: org.jlab.service.rtpc.RTPCEngine
-  #   name: RTPC
+  - class: org.jlab.service.rtpc.RTPCEngine
+    name: RTPC
 configuration:
   io-services:
     writer:
