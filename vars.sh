@@ -19,7 +19,6 @@ YAML="$WORK/yaml/rgf_mc.yaml"
 
 # --+ GEMC CONFIG +--------------------
 LUND_VZ="-5.0*cm, 25.0*cm, reset"
-GEMC_OPTS="-USE_GUI=0 -FASTMCMODE -RANDOMIZE_LUND_VZ=$LUND_VZ"
 
 # --+ HIPO BANKS +---------------------
 BANKLIST=""
