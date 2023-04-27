@@ -8,21 +8,16 @@ VOL="/volatile/clas12/benkel/simul"
 
 DAT="$VOL/lund/dat"
 BATCHES="$VOL/lund/batches"
-EVIO="$VOL/gemc_out/evio"
-HIPO_IN="$VOL/gemc_out/hipo"
+GEMC_OUT="$VOL/gemc_out"
 HIPO_OUT="$VOL/hipo_out/files"
 HIPO_FILTERED="$VOL/hipo_out/filtered"
 
 # --+ FILES +--------------------------
-GCARD="$WORK/gcard/rgf_summer2020.gcard"
-YAML="$WORK/yaml/rgf_mc.yaml"
-
-# --+ GEMC CONFIG +--------------------
-LUND_VZ="-5.0*cm, 25.0*cm, reset"
+GCARD="$GEMC/../config/rgf_spring2020.gcard"
+YAML="$PWD/yaml/rge-fmtacc-spring2020.yaml"
 
 # --+ HIPO BANKS +---------------------
-BANKLIST=""
-BANKLIST=$BANKLIST",REC::Particle"
+BANKLIST="REC::Particle"
 BANKLIST=$BANKLIST",REC::Track"
 BANKLIST=$BANKLIST",REC::Calorimeter"
 BANKLIST=$BANKLIST",REC::Cherenkov"
