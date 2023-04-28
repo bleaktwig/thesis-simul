@@ -44,7 +44,7 @@ configuration:
     timestamp: 01/29/2023-14:00:00
   io-services:
     writer:
-      schema_dir: "/work/clas12/users/benkel/simul/banks/dst_8.2.2"
+      schema_dir: "/work/clas12/users/benkel/simul/banks/dst"
   services:
     MAGFIELDS:
       magfieldSolenoidMap: Symm_solenoid_r601_phi1_z1201_13June2018.dat
