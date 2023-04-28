@@ -8,5 +8,4 @@ for in_filename in $BATCHES/*; do
 
     sbatch --mem=2048 $WORK/run_gemc.sh $in_filename $out_filename
     ((counter++))
-    break
 done;
